@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+    <p>名前：山田太郎</p>
+    <p>年齢：２５歳</p>
+    <p>出身地：東京都</p>
+    <p>趣味：プログラミング、読書</p>
+    <h2>好きなもの</h2>
+    <ul>
+        <li>ラーメン</li>
+        <li>カレー</li>
+        <li>寿司</li>
+    </ul>
+    <h2>今年の目標</h2>
+    <ol>
+        <li>laravelをマスターする</li>
+        <li>毎日コードを書く</li>
+        <li>ポートフォリオを作成する</li>
+    </ol>
+    <h2>リンク</h2>
+    <a href="https://github.com/uminaka-collab/my-first-git/blob/main/README.md" target="_blank">私のgithub</a>
+    <h2>好きな風景</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Japanese_Hiragana_kyokashotai_KI.svg" alt="Japanese_Hiragana_kyokashotai_KI" alt="説明" width="400">
+    
+    <h2>お問い合わせ</h2>
+    <form action="/submit" method="post">
+
+    <div>
+    <label for="contact-name">お名前</label>
+    <input type="text" id="contact-name" name="name" required>
+    </div>
+    <div>
+        <label for="contact-category">お問い合わせ種別</label>
+        <select name="category" id="contact-category">
+            <option value="">--選択してください--</option>
+            <option value="general1">一般的な問い合わせ</option>
+            <option value="feedback">ご意見・ご要望</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="contact-message">ご要望内容</label>
+        <textarea name="message" id="contact-message" rows="5" required>/textarea>
+    </div>
+    <div>
+        <button type="submit">送信する</button>
+    </div>
+    </form>
+</body>
+</html>
